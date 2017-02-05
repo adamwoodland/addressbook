@@ -3,3 +3,11 @@ install:
 - mvn install
 jdk:
 - oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: kHYBHwZe4rGN/XGazUUU9V6qlssgAB5ihRXhelQvJpMmS/+9wk6W2UxmHw3CUS5m0Rgzq4TKkKuv2omd0RGlVHRp8pgLWUTi/DWypez1VUfQX1mi27sbFaO9CiA6SbcHXMjh1jJJBG/BvIY3DldMF2hHI0vUIxfiOtZQ0B6XeA/wX0iM3+konoBnDTlF2saD7pdaM4Omg3iUZEjq9wMKCJdtAZ7VtZb1I3Rup/m4enJMLCgnd6p+ZSqnswFmbkcAUutCHxeZFbKN8BV5Z8+yw3SXmMw1wY+DD3vllNpG67djIBjcIque49d0QWm9GuZVsu5R3GSkqoLFmXdAX2RnCswUXYf3Cb0dIRoEZiee6jbAAybzIiA8xiT7MKih1DXy1sFwCg43XCXf7GasT4oQJFLa8GoprS8crBrLRnFXx3niy7hvAKEPFdYsr0JagP+CTb3kOJhd+KNAizHr8y7VuPAH0GrJ+vsA7HLPWGO5SA8/k64QZwalQfeW6zF3Iv2apRghXY0ghgnnYYPvRPD4Cc0stGSoDkHMJMeWwQkP90MML21HOD9CYLaFqEF54ERKZqbD1YoDVWzdfXc4jaBjDHaxJAQeUo1spis812ZBSpiu743ZZHptLTkavC1GQ7qmp/GdRW8ICDhEshTVKuzJJKFopPH5OrPrqnvkIdzb6zY=
+  app: adamwoodland-addressbook
+  on:
+    repo: adamwoodland/addressbook
+    branch: todo_tasks
